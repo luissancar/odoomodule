@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="guitars_amps_action" name="amps"
+                     res_model="guitars.amps" />
+        <menuitem id="guitars_amps_menu"
+                  name="amps"
+                  action="guitars_amps_action"
+                  parent=""
+                  sequence="1" />
+
+        <record id="guitars_amps_view_tree" model="ir.ui.view">
+            <field name="name">Lista amplificadores</field>
+            <field name="model">guitars.amps</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="codigo" />
+                    <field name="marca" />
+                    <field name="modelo" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="guitars_amps_view_form" model="ir.ui.view">
+            <field name="name">Formulario de amplificadores</field>
+            <field name="model">guitars.amps</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="codigo" />
+                        <field name="marca" />
+                        <field name="modelo" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="guitars_amps_view_search" model="ir.ui.view">
+            <field name="name">Busqueda amplificadores</field>
+            <field name="model">guitars.amps</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="codigo" />
+                    <field name="marca" />
+                    <field name="modelo" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

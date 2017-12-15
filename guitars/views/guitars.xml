@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="guitars_guitars_action" name="guitars"
+                     res_model="guitars.guitars" />
+        <menuitem id="guitars_guitars_menu"
+                  name="guitars"
+                  action="guitars_guitars_action"
+                  parent=""
+                  sequence="1" />
+
+        <record id="guitars_guitars_view_tree" model="ir.ui.view">
+            <field name="name">Lista guitarras</field>
+            <field name="model">guitars.guitars</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="codigo" />
+                    <field name="marca" />
+                    <field name="modelo" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="guitars_guitars_view_form" model="ir.ui.view">
+            <field name="name">Formulario de guitarras</field>
+            <field name="model">guitars.guitars</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="codigo" />
+                        <field name="marca" />
+                        <field name="modelo" />
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="guitars_guitars_view_search" model="ir.ui.view">
+            <field name="name">Busqueda guitarras</field>
+            <field name="model">guitars.guitars</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="codigo" />
+                    <field name="marca" />
+                    <field name="modelo" />
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>
