@@ -5,5 +5,5 @@
     'version': '1.0',
     'website': 'iesayala.ddns.net',
     'depends': ['base'],
-    'data': ['views/guitars.xml', 'views/amps.xml']
+    'data': ['views/guitars.xml', 'views/amps.xml', 'views/paises.xml']
 }

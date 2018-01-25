@@ -13,10 +13,13 @@
             <field name="name">Lista guitarras</field>
             <field name="model">guitars.guitars</field>
             <field name="arch" type="xml">
+
                 <tree>
                     <field name="codigo" />
                     <field name="marca" />
                     <field name="modelo" />
+                        <field name="pais" />
+
                 </tree>
             </field>
         </record>
@@ -26,10 +29,18 @@
             <field name="model">guitars.guitars</field>
             <field name="arch" type="xml">
                 <form>
+                    <header>
+                        <button name="limpiar" type="object" string="Limpia" class="oe_highlight" />
+                        <button name="limpia_todo" type="object" string="Limpia todo" class="oe_highlight" />
+
+
+                    </header>
                     <group>
                         <field name="codigo" />
                         <field name="marca" />
                         <field name="modelo" />
+                        <field name="pais" />
+
                     </group>
                 </form>
             </field>
@@ -43,6 +54,8 @@
                     <field name="codigo" />
                     <field name="marca" />
                     <field name="modelo" />
+                        <field name="pais" />
+
                 </search>
             </field>
         </record>
