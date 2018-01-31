@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <act_window id="guitars_regiones_action" name="regiones"
+                     res_model="guitars.regiones" />
+
+        <menuitem name="regiones" id="menu_regiones" action="guitars_regiones_action" parent="menu_inicio" sequence="20"/>
+
+
+        <record id="guitars_regiones_view_tree" model="ir.ui.view">
+            <field name="name">Lista regiones</field>
+            <field name="model">guitars.regiones</field>
+            <field name="arch" type="xml">
+
+                <tree>
+
+                    <field name="region" />
+                    <field name="pais" />
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="guitars_regiones_view_form" model="ir.ui.view">
+            <field name="name">Formulario de regiones</field>
+            <field name="model">guitars.regiones</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="limpiar" type="object" string="Limpia" class="oe_highlight" />
+                        <button name="limpia_todo" type="object" string="Limpia todo" class="oe_highlight" />
+
+
+                    </header>
+                    <group>
+                    <field name="region" />
+                    <field name="pais" />
+
+
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="guitars_guitars_view_search" model="ir.ui.view">
+            <field name="name">Busqueda regiones</field>
+            <field name="model">guitars.regiones</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="region" />
+                    <field name="pais" />
+
+
+                </search>
+            </field>
+        </record>
+
+    </data>
+</odoo>

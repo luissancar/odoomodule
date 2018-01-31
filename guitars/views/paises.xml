@@ -3,11 +3,9 @@
     <data>
         <act_window id="guitars_paises_action" name="paises"
                      res_model="guitars.paises" />
-        <menuitem id="guitars_paises_menu"
-                  name="paises"
-                  action="guitars_paises_action"
-                  parent=""
-                  sequence="1" />
+
+         <menuitem name="paises" id="menu_paises" action="guitars_paises_action" parent="menu_inicio" sequence="17"/>
+
 
         <record id="guitars_paises_view_tree" model="ir.ui.view">
             <field name="name">Lista amplificadores</field>

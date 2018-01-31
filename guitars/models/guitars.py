@@ -6,6 +6,7 @@ class GuitarsGuitars(models.Model):
     marca = fields.Char('Marca', required=True)
     modelo = fields.Char('Modelo', required=True)
     pais = fields.Many2one('guitars.paises', 'Paises')
+    region = fields.Many2one('guitars.regiones', 'Regiones')
 
 
 
